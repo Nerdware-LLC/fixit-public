@@ -1,21 +1,31 @@
 name: Release Workflow
 
 on:
-  workflow_dispatch:
-  workflow_call:
-    secrets:
-      SEMANTIC_RELEASE_TOKEN: { required: true }
   push:
-    branches:
-      - main
-      - next
-    paths:
-      - "**" # TODO Update path glob to reflect only the project files that should trigger the Release workflow.
+    branches: [main, next]
+    paths: ["**/*", "!CHANGELOG.md"]
+  # This workflow can be manually triggered
+  workflow_dispatch:
 
 jobs:
   release:
-    name: Release
-    uses: Nerdware-LLC/reusable-action-workflows/.github/workflows/release.yaml@main
-    secrets:
-      SEMANTIC_RELEASE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # If you add branch protection rules, a custom token is required.
+    name: 📦 Release
+    runs-on: ubuntu-latest
+    permissions:
+      attestations: write # to generate artifact attestations for dist assets
+      contents: write #     to create a release
+      issues: write #       to be able to comment on released issues
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Run Semantic-Release
+        id: semantic-release
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          extra_plugins: |
+            @semantic-release/changelog@6.0.3
+            @semantic-release/git@10.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}

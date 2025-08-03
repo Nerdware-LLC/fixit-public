@@ -1,0 +1,15 @@
+{
+  "explorer.sortOrder": "type",
+  "explorer.sortOrderLexicographicOptions": "lower",
+
+  "git.ignoreLimitWarning": true,
+
+  "json.schemas": [
+    {
+      "fileMatch": ["public/manifest.json"],
+      "url": "https://json.schemastore.org/web-manifest.json"
+    }
+  ],
+
+  "search.exclude": { "**/CHANGELOG.md": true }
+}

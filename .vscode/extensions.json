@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    // Markdown
+    "bierner.markdown-mermaid", //               MermaidJS charts in MD previews
+    "bierner.markdown-preview-github-styles", // GitHub-flavored MD previews
+
+    // Miscellaneous
+    "christian-kohler.path-intellisense", //     Path auto-completion
+    "htmlhint.vscode-htmlhint", //               HTMLHint
+    "redhat.vscode-yaml", //                     YAML lang server
+    "vscode-icons-team.vscode-icons" //          vscode-icons
+  ],
+  "unwantedRecommendations": []
+}

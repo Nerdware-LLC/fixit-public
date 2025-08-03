@@ -25,13 +25,9 @@ plugins:
   - - "@semantic-release/release-notes-generator"
     - preset: angular
 
-  # TODO Uncomment this plugin if the project includes a package.json file
-  # - - "@semantic-release/npm"
-  #   - npmPublish: false # <-- Keep `false` if publishing is handled by a Publish Workflow
-
   - - "@semantic-release/github"
     - addReleases: bottom
-    # TODO: Add "assignees" here to auto-assign issues on release failure
+      assignees: trevor-anderson
 
   - - "@semantic-release/changelog"
     - changelogFile: "CHANGELOG.md"
@@ -46,6 +42,3 @@ plugins:
     - message: "chore(release): version ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       assets:
         - "CHANGELOG.md"
-        - "package.json"
-        - "package-lock.json"
-        - "npm-shrinkwrap.json"

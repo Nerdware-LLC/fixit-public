@@ -1,10 +1,84 @@
 ###############################################################################
-# GitHub Template .gitignore Files 👉 https://github.com/github/gitignore
+# GIT IGNORE
 
-# TODO Add project-specific entries to .gitignore
+# Packages/npm/pnpm/yarn
+node_modules
+.npm
+npm-*.log*
+pnpm-*.log*
+yarn-*.log*
 
-#------------------------------------------------------------------------------
-# Nerdware gitignore entries
+# Nx/Lerna
+.nx/cache
+.nx/workspace-data
+tmp
+lerna-*.log*
+# Tmp nx files for vite/vitest don't get cleaned up unless these are here:
+vite.config.*.timestamp*
+vitest.config.*.timestamp*
+# Nx MCP
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md
+
+# Build files
+build/
+dist/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional eslint cache
+.eslintcache
+
+# Test/coverage files
+coverage
+lib-cov
+*.lcov
+
+# Storybook
+storybook-static
+
+# Logs
+logs
+*.log
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# vuepress v2.x temp and cache directory
+.temp
+.cache
+
+# Serverless directories
+.serverless/
+
+# DynamoDB-local files
+.dynamodb/
+
+# Backup files
+**/*.backup.*
+**/*.back.*
+
+# macOS devs (Desktop Services Store)
+.DS_*
 
 # Notes
 NOTE*
@@ -31,9 +105,11 @@ FIXME*
 *.sql
 *.ssleay
 schema.json
+!tools/fixit-nx-plugin/**/schema.json
 
 # VSCode-related
 .vscode/*
+!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json

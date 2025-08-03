@@ -4,68 +4,36 @@
       <img src="https://github.com/Nerdware-LLC/.github/blob/main/profile/nerdware_logo.png" height="120" alt="Nerdware logo" />
    </a>
 
-   <h1>Nerdware Template Repository</h1>
+   <h1>Fixit — Public Assets</h1>
 
-**🚀 An Awesome Template to Jumpstart Projects 🚀**
+Fixit is a SaaS product that provides users with powerful tools for managing maintenance and repair workflows, including in-app payments powered by [Stripe](https://stripe.com/). This repo is a publicly-available sibling of the [_private_ Fixit monorepo](https://github.com/Nerdware-LLC/fixit), and includes non-code assets like publicly-shared images, icons, and other files.
 
+Author: [Trevor Anderson](https://github.com/trevor-anderson), Solopreneur & Founder of [Nerdware](https://github.com/Nerdware-LLC)
+
+[<img src="images/stripe/powered_by_stripe_purple.svg" height="22" style="position:relative;top:1px;" alt="Powered by Stripe" />](https://stripe.com/ "Check out Stripe")
+&nbsp;
+[![GraphQL][graphql-badge]](https://graphql.org/ "graphql.org")
+&nbsp;
+[![Apollo][apollo-badge]](https://www.apollographql.com/ "apollographql.com")
+&nbsp;
+[![OpenAPI][open-api-badge]](https://spec.openapis.org/oas/latest.html "spec.openapis.org/oas/latest")
+&nbsp;
+[![Express][express-badge]](https://expressjs.com/ "expressjs.com")
+&nbsp;
 [![pre-commit][pre-commit-badge]](https://pre-commit.com "pre-commit.com")
-[![semantic-release][semantic-badge]](https://github.com/semantic-release/semantic-release "github.com: semantic-release")
+&nbsp;
 [![License: Proprietary][license-badge]](/LICENSE "View License")
 
 <!--   BADGE LINKS   -->
 
+[graphql-badge]: https://img.shields.io/badge/GraphQL-E10098.svg?logo=graphql&logoColor=E10098&labelColor=454545
+[apollo-badge]: https://img.shields.io/badge/Apollo_Server_v4-311C87.svg?logo=apollo-graphql&labelColor=454545
+[open-api-badge]: https://img.shields.io/badge/OpenAPI%20v3.1-609531?logo=openapiinitiative&labelColor=454545
+[express-badge]: https://img.shields.io/badge/Express_v4-7B7B7B.svg?logo=express&logoColor=FFF&labelColor=454545
 [pre-commit-badge]: https://img.shields.io/badge/pre--commit-F8B424.svg?logo=pre-commit&logoColor=F8B424&labelColor=gray
-[semantic-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-E10079.svg
 [license-badge]: https://img.shields.io/badge/License-Proprietary-000080.svg?labelColor=gray
 
 </div>
-
-### **_Post-Initialization Setup_**
-
-1. Update the [**.gitignore**](/.gitignore).
-
-   - GitHub has some [awesome templates here](https://github.com/github/gitignore).
-   - You can also query the [gitignore.io API](https://docs.gitignore.io/install/command-line) to find a list of recommended gitignore entries to suit virtually any type of project.
-
-     ```bash
-     # Obtain a list of available project-type options from the gitignore.io API.
-     curl -sL https://www.toptal.com/developers/gitignore/api/list | sed 's/,/\n/g' > ./gitignore_io_api_options
-
-     # Review the resultant list in "./gitignore_io_api_options" to find options that fit your project.
-     # You can query gitignore entries for one or more options by separating them with commas.
-     # For example, if your project will contain both Terraform and Terragrunt files:
-     curl -sL https://www.toptal.com/developers/gitignore/api/terraform,terragrunt >> .gitignore
-     ```
-
-2. Set up [**pre-commit**](https://pre-commit.com/#install):
-
-   1. Ensure it's [installed](https://pre-commit.com/#install) locally or in an executable image.
-   2. Update the [**pre-commit config file**](/.pre-commit-config.yaml) with project-appropriate hooks and tools. The pre-commit project provides a complete list of [supported hooks here](https://pre-commit.com/hooks.html). Some popular hook sources:
-      - ["Out-of-the-Box" pre-commit Hooks](https://github.com/pre-commit/pre-commit-hooks)
-      - [pre-commit Hooks from gruntwork.io](https://github.com/gruntwork-io/pre-commit)
-      - [Some Terraform-specific pre-commit Hooks](https://github.com/antonbabenko/pre-commit-terraform)
-   3. Run `pre-commit install` to ensure local .git hooks are present.
-
-3. If the repo will include [branch protection rules][gh-branch-protect-url], take the additional steps needed to enable the [**Semantic-Release GitHub Action**][release-gh-action-url]:
-
-   1. [Create a GitHub Personal Access Token][gh-pat-docs-url]. When creating the token, the minimum required scopes are:
-      - `repo` for a private repository
-      - `public_repo` for a public repository
-   2. Add a [GitHub Secret][gh-action-docs-url] to your repo named "SEMANTIC_RELEASE_TOKEN" with the value set to the new PAT you created in the previous step.
-   3. Once the secret has been added to your repo, update the [release.yaml workflow](/.github/workflows/release.yaml):
-      - Update **on.push.paths** path glob "\*\*" to reflect only the project files that should trigger the Release workflow (e.g., "\*.js" or "\*.tf").
-      - Delete the "**check-required-secret**" job (it was included so you can push initialization commits without triggering a bunch of failed GH Action runs).
-
-   > Optionally, if you'd like to auto-assign GH Issues on release failures, you can add **assignees** to the "@semantic-release/github" plugin in [.releaserc.yaml](/.releaserc.yaml).
-
-   [gh-branch-protect-url]: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
-   [release-gh-action-url]: https://github.com/Nerdware-LLC/reusable-action-workflows#semantic-release
-   [gh-pat-docs-url]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
-   [gh-action-docs-url]: https://docs.github.com/en/actions/security-guides/encrypted-secrets
-
-4. Remove this section from the README.
-
-5. Profit 💰💰💰🥳🎉 <!-- https://knowyourmeme.com/memes/profit -->
 
 ## 📝 License
 
@@ -77,13 +45,13 @@ See [LICENSE](/LICENSE) for more information.
 
 ## 💬 Contact
 
-Trevor Anderson — [Trevor@Nerdware.cloud](mailto:trevor@nerdware.cloud) — [@TeeRevTweets](https://twitter.com/teerevtweets)
+Trevor Anderson — [Trevor@Nerdware.cloud](mailto:trevor@nerdware.cloud) — [@trevor-anderson](https://github.com/trevor-anderson)
 
+[<img src="https://github.com/trevor-anderson/trevor-anderson/blob/main/assets/github_logo_white.svg" height="40" alt="Check out Nerdware on GitHub" />](https://github.com/Nerdware-LLC)
+&emsp;
 [<img src="https://github.com/trevor-anderson/trevor-anderson/blob/main/assets/YouTube_icon_circle.svg" height="40" alt="Check out Nerdware on YouTube" />](https://www.youtube.com/@nerdware-io)
 &emsp;
 [<img src="https://github.com/trevor-anderson/trevor-anderson/blob/main/assets/LinkedIn_icon_circle.svg" height="40" alt="Trevor Anderson's LinkedIn" />](https://www.linkedin.com/in/meet-trevor-anderson/)
-&emsp;
-[<img src="https://github.com/trevor-anderson/trevor-anderson/blob/main/assets/Twitter_icon_circle.svg" height="40" alt="Trevor Anderson's Twitter" />](https://twitter.com/TeeRevTweets)
 &emsp;
 [<img src="https://github.com/trevor-anderson/trevor-anderson/blob/main/assets/email_icon_circle.svg" height="40" alt="Email Trevor Anderson" />](mailto:trevor@nerdware.cloud)
 
