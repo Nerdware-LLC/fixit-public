@@ -1,0 +1,51 @@
+---
+branches:
+  - main
+  - { name: next, prerelease: true }
+tagFormat: v${version}
+plugins:
+  - - "@semantic-release/commit-analyzer"
+    - preset: angular
+      releaseRules:
+        - { breaking: true, release: major }
+        - { type: feat, release: minor }
+        - { type: refactor, scope: "core*", release: minor }
+        - { revert: true, release: patch }
+        - { type: build, release: patch }
+        - { type: ci, release: patch }
+        - { type: deps, release: patch }
+        - { type: fix, release: patch }
+        - { type: perf, release: patch }
+        - { type: refactor, release: patch }
+        - { type: chore, release: false }
+        - { type: docs, release: false }
+        - { type: style, release: false }
+        - { scope: no-release, release: false }
+
+  - - "@semantic-release/release-notes-generator"
+    - preset: angular
+
+  # TODO Uncomment this plugin if the project includes a package.json file
+  # - - "@semantic-release/npm"
+  #   - npmPublish: false # <-- Keep `false` if publishing is handled by a Publish Workflow
+
+  - - "@semantic-release/github"
+    - addReleases: bottom
+    # TODO: Add "assignees" here to auto-assign issues on release failure
+
+  - - "@semantic-release/changelog"
+    - changelogFile: "CHANGELOG.md"
+      changelogTitle: |-
+        # Changelog
+
+        All notable changes to this project will be documented in this file.
+
+        ---
+
+  - - "@semantic-release/git"
+    - message: "chore(release): version ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      assets:
+        - "CHANGELOG.md"
+        - "package.json"
+        - "package-lock.json"
+        - "npm-shrinkwrap.json"
