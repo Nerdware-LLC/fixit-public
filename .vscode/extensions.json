@@ -15,6 +15,7 @@
     // Miscellaneous
     "christian-kohler.path-intellisense", //     Path auto-completion
     "editorconfig.editorconfig", //              EditorConfig support
+    "esbenp.prettier-vscode", //                 Prettier (multi-lang formatter)
     "gruntfuggly.todo-tree", //                  Todo/Fixme lists
     "htmlhint.vscode-htmlhint", //               HTMLHint
     "jock.svg", //                               SVG preview
