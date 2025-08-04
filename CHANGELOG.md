@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [1.2.0](https://github.com/Nerdware-LLC/fixit-public/compare/v1.1.0...v1.2.0) (2025-08-04)
+
+### Features
+
+* add fixit-api and fixit-web banners ([d7dd03f](https://github.com/Nerdware-LLC/fixit-public/commit/d7dd03fb9d473cc9e83bc30ff09c810818c87ad4))
+
 ## [1.1.0](https://github.com/Nerdware-LLC/fixit-public/compare/v1.0.0...v1.1.0) (2025-08-04)
 
 ### Bug Fixes
