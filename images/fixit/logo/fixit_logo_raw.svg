@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="300" width="300" viewBox="0 0 300 300" role="img" aria-labelledby="fixit-logo-svg-title fixit-logo-svg-desc">
+  <title id="fixit-logo-svg-title">Fixit Logo (v2026-06-15)</title>
+  <desc id="fixit-logo-svg-desc">A stylized hammer logo for Fixit, the all-in-one property maintenance platform.</desc>
+  <!-- Outer-most white circle background -->
+  <circle cx="150" cy="150" r="150" fill="#ffffff" />
+  <!-- Gradient for the outer dark-gray ring/circle -->
+  <defs>
+    <linearGradient id="fixit-logo-svg-gray-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9c9c9c" />
+      <stop offset="66%" stop-color="#303030" />
+    </linearGradient>
+  </defs>
+  <!-- Dark gray circle/ring -->
+  <circle cx="150" cy="150" r="148" fill="url(#fixit-logo-svg-gray-gradient)" />
+  <!-- Inner white circle/ring -->
+  <circle cx="150" cy="150" r="138" fill="#ffffff" />
+  <!-- Orange circle container for hammer artwork -->
+  <circle cx="150" cy="150" r="124" fill="#f78103" />
+  <!-- clipPath for hammer-artwork-group that hides anything that would extend outside the orange circle -->
+  <defs>
+    <clipPath id="fixit-logo-svg-inner-artwork-circle-clip" clipPathUnits="userSpaceOnUse">
+      <circle cx="150" cy="150" r="124" />
+    </clipPath>
+  </defs>
+  <!-- Hammer artwork group -->
+  <g clip-path="url(#fixit-logo-svg-inner-artwork-circle-clip)">
+    <!-- This 'path' creates 2 visual elements:
+      1) The 'fill' creates the dark gray lower field that the hammer sits on.
+      2) The 'stroke' creates a white divider between the orange and gray parts of the hammer-artwork-group.
+    -->
+    <path fill="url(#fixit-logo-svg-gray-gradient)" stroke="#ffffff" stroke-width="14" d="M 40,225 Q 150,205 260,225 Q 150,375 40,225 Z" />
+    <!-- Hammer head and claw -->
+    <path fill="#ffffff" d="M 80,73 H 92 C 95,73 96,73 97,74 Q 110,85 123,73 C 129,67 135,68 145,68 H 166 C 177,69 191,75 203,87 C 218,100 229,118 233,136 C 234,140 232,143 231,143 C 228,138 222,122 195,106 C 182,100 176,103 172,114 C 171,120 171,124 171,139 H 129 C 129,127 129,119 123,112 Q 110,100 97,111 C 96,112 95,112 92,112 H 80 Q 76,112 76,110 Q 74,92.5 76,75 Q 76,73 80,73 Z" />
+    <!-- Hammer handle -->
+    <path fill="#ffffff" d="M 129,142 H 171 V 211 C 171,238 173,260 177,282 C 169,284 160,285 150,285 C 140,285 131,284 123,282 C 127,260 129,238 129,211 Z" />
+  </g>
+  <!-- 1px white ring around hammer-artwork-group, eliminates visual artifacts like connecting lines -->
+  <circle cx="150" cy="150" r="124" fill="none" stroke="#ffffff" stroke-width="1" />
+</svg>

@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="50" fill="white" />
-  <!-- TODO Update below img href once image is in "stable" location in new monorepo. -->
-  <image
-    href="https://raw.githubusercontent.com/Nerdware-LLC/fixit-web/main/.storybook/assets/fixit_logo.png"
-    x="0"
-    y="0"
-    width="100"
-    height="100"
-  />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" aria-labelledby="fixit-logo-svg-title fixit-logo-svg-desc" viewBox="0 0 300 300"><title id="fixit-logo-svg-title">Fixit Logo (v2026-06-15)</title><desc id="fixit-logo-svg-desc">A stylized hammer logo for Fixit, the all-in-one property maintenance platform.</desc><circle cx="150" cy="150" r="150" fill="#fff"/><defs><linearGradient id="fixit-logo-svg-gray-gradient" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#9c9c9c"/><stop offset="66%" stop-color="#303030"/></linearGradient></defs><circle cx="150" cy="150" r="148" fill="url(#fixit-logo-svg-gray-gradient)"/><circle cx="150" cy="150" r="138" fill="#fff"/><circle cx="150" cy="150" r="124" fill="#f78103"/><defs><clipPath id="fixit-logo-svg-inner-artwork-circle-clip" clipPathUnits="userSpaceOnUse"><circle cx="150" cy="150" r="124"/></clipPath></defs><g clip-path="url(#fixit-logo-svg-inner-artwork-circle-clip)"><path fill="url(#fixit-logo-svg-gray-gradient)" stroke="#fff" stroke-width="14" d="M40 225q110-20 220 0-110 150-220 0Z"/><path fill="#fff" d="M80 73h12c3 0 4 0 5 1q13 11 26-1c6-6 12-5 22-5h21c11 1 25 7 37 19 15 13 26 31 30 49 1 4-1 7-2 7-3-5-9-21-36-37-13-6-19-3-23 8-1 6-1 10-1 25h-42c0-12 0-20-6-27q-13-12-26-1c-1 1-2 1-5 1H80q-4 0-4-2-2-17.5 0-35 0-2 4-2m49 69h42v69c0 27 2 49 6 71q-12 3-27 3t-27-3c4-22 6-44 6-71Z"/></g><circle cx="150" cy="150" r="124" fill="none" stroke="#fff"/></svg>
