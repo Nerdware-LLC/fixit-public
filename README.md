@@ -27,9 +27,9 @@ Author: [Trevor Anderson](https://github.com/trevor-anderson), Solopreneur & Fou
 <!--   BADGE LINKS   -->
 
 [graphql-badge]: https://img.shields.io/badge/GraphQL-E10098.svg?logo=graphql&logoColor=E10098&labelColor=454545
-[apollo-badge]: https://img.shields.io/badge/Apollo_Server_v4-311C87.svg?logo=apollo-graphql&labelColor=454545
-[open-api-badge]: https://img.shields.io/badge/OpenAPI%20v3.1-609531?logo=openapiinitiative&labelColor=454545
-[express-badge]: https://img.shields.io/badge/Express_v4-7B7B7B.svg?logo=express&logoColor=FFF&labelColor=454545
+[apollo-badge]: https://img.shields.io/badge/Apollo_Server-311C87.svg?logo=apollo-graphql&labelColor=454545
+[open-api-badge]: https://img.shields.io/badge/OpenAPI-609531?logo=openapiinitiative&labelColor=454545
+[express-badge]: https://img.shields.io/badge/Express-7B7B7B.svg?logo=express&logoColor=FFF&labelColor=454545
 [pre-commit-badge]: https://img.shields.io/badge/pre--commit-F8B424.svg?logo=pre-commit&logoColor=F8B424&labelColor=gray
 [license-badge]: https://img.shields.io/badge/License-Proprietary-000080.svg?labelColor=gray
 
