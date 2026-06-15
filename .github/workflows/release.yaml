@@ -3,7 +3,7 @@ name: Release Workflow
 on:
   push:
     branches: [main, next]
-    paths: ["**/*", "!CHANGELOG.md"]
+    paths: ["**/*", "!CHANGELOG.md", "!.github/workflows/release.yaml"]
   # This workflow can be manually triggered
   workflow_dispatch:
 
@@ -16,13 +16,13 @@ jobs:
       contents: write #     to create a release
       issues: write #       to be able to comment on released issues
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: false
 
       - name: Run Semantic-Release
         id: semantic-release
-        uses: cycjimmy/semantic-release-action@v4
+        uses: cycjimmy/semantic-release-action@v6
         with:
           extra_plugins: |
             @semantic-release/changelog@6.0.3
