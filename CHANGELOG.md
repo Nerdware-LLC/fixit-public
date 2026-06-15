@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [1.2.1](https://github.com/Nerdware-LLC/fixit-public/compare/v1.2.0...v1.2.1) (2026-06-15)
+
 ## [1.2.0](https://github.com/Nerdware-LLC/fixit-public/compare/v1.1.0...v1.2.0) (2025-08-04)
 
 ### Features
