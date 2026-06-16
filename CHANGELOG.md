@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [1.3.0](https://github.com/Nerdware-LLC/fixit-public/compare/v1.2.1...v1.3.0) (2026-06-16)
+
+### Features
+
+* add SVG versions of PNG icon files ([f98bd5f](https://github.com/Nerdware-LLC/fixit-public/commit/f98bd5f3eb1e2885c28bfe55463f1d6cd267a71e)), closes [hi#quality](https://github.com/hi/issues/quality)
+
 ## [1.2.1](https://github.com/Nerdware-LLC/fixit-public/compare/v1.2.0...v1.2.1) (2026-06-15)
 
 ## [1.2.0](https://github.com/Nerdware-LLC/fixit-public/compare/v1.1.0...v1.2.0) (2025-08-04)
