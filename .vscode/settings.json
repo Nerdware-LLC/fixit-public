@@ -2,20 +2,12 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   "explorer.sortOrder": "type",
-  "explorer.sortOrderLexicographicOptions": "lower",
+  "explorer.sortOrderLexicographicOptions": "upper",
 
   "git.ignoreLimitWarning": true,
 
-  "json.schemas": [
-    {
-      "fileMatch": ["public/manifest.json"],
-      "url": "https://json.schemastore.org/web-manifest.json"
-    }
-  ],
+  "search.exclude": { "**/CHANGELOG.md": true },
 
-  "markdownlint.config": {
-    "MD024": { "siblings_only": true }
-  },
-
-  "search.exclude": { "**/CHANGELOG.md": true }
+  "todo-tree.regex.regex": "(//|#|<!--|--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*(<-+\\s)?($TAGS)",
+  "todo-tree.ripgrep.ripgrep": "/usr/bin/rg"
 }
