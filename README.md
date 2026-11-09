@@ -1,7 +1,7 @@
 <div align="center">
 
    <a href="https://www.youtube.com/@nerdware-io">
-      <img src="https://github.com/Nerdware-LLC/.github/blob/main/profile/nerdware_logo.png" height="120" alt="Nerdware logo" />
+      <img src="https://raw.githubusercontent.com/Nerdware-LLC/fixit-public/main/images/fixit/banners/fixit_readme_banner.png" alt="Fixit project banner" />
    </a>
 
    <h1>Fixit — Public Assets</h1>
